@@ -10,4 +10,8 @@ void draw() {
   background(0);
   b.display();         //call b's display() method
   c.display();         //call c's display() method
+  b.move();
+  c.move();
+  b.bounceoff();
+  c.bounceoff();
 }
