@@ -11,7 +11,20 @@ class Ball {
     loc = new PVector(random(diam, width-diam), random(diam, height-diam));
     c = color(random(255), random(50), random(100, 255));
   }
-
+  
+  
+  Ball(float tSpeed, float X, float Y, float Size) {
+    diam = 125;
+    Size = diam;
+    vel = PVector.random2D();
+    vel.mult(tSpeed);
+    loc = new PVector(random(diam, width-diam), random(diam, height-diam));
+    c = color(random(255), random(50), random(100, 255));
+  }
+  
+   
+  
+  
   //after declaring fields and setting up constructors, you can define your methods
   void display() {
     fill(c);

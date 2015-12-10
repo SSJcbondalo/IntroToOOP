@@ -2,8 +2,8 @@ Ball b;                //declare a new ball called b
 Ball c;                //declare a new ball called c
 void setup() {
   size(900, 800);
-  b = new Ball(); //initialize b as a new object of the Ball class
-  c = new Ball();
+  b = new Ball(10, width/2, height/2, 40); //initialize b as a new object of the Ball class
+  c = new Ball(.1, width/4, height/2, 70);
 }
 
 void draw() {
